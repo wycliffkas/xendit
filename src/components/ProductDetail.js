@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "./ProductDetail.module.scss";
 
 const ProductDetail = ({ title, price, description, category, image }) => {
   return (
     <div class="d-flex justify-content-around">
       <div class="p-2">
-        <img src={image} className="modeal-img" />
+        <img src={image} className={styles.modalImg} />
       </div>
       <div class="p-2">
         <h6>
